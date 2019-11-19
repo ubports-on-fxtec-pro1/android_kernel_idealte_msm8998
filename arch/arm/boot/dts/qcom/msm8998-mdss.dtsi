@@ -669,4 +669,5 @@
 		qcom,mdss-fb-map = <&mdss_fb2>;
 		qcom,pluggable;
 	};
+
 };

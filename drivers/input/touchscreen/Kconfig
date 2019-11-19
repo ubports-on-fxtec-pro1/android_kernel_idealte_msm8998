@@ -12,6 +12,7 @@ menuconfig INPUT_TOUCHSCREEN
 if INPUT_TOUCHSCREEN
 
 source "drivers/input/touchscreen/synaptics_dsx/Kconfig"
+source "drivers/input/touchscreen/gt1x_v1_6_revised/Kconfig"
 
 config OF_TOUCHSCREEN
 	def_tristate INPUT
@@ -1223,6 +1224,16 @@ config TOUCHSCREEN_ST
 
 	  If unsure, say N.
 
+config TOUCHSCREEN_GT1X
+	bool "Goodix touchpanel GT1x series"
+	depends on I2C
+	help
+	  Say Y here if you have a Goodix GT9xx touchscreen.
+
 source "drivers/input/touchscreen/st/Kconfig"
 
+source "drivers/input/touchscreen/focaltech_touch/Kconfig"
+source "drivers/input/touchscreen/focaltech_touch_k1/Kconfig"
+source "drivers/input/touchscreen/atmel_mxt/Kconfig"
+source "drivers/input/touchscreen/it7259_ts/Kconfig"
 endif
