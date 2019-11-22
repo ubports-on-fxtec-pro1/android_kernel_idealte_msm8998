@@ -128,11 +128,12 @@ ifdef CONFIG_DEVICE_IDEALTE_T5
 dtbo-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-t5-overlay.dtbo
 msm8998-v2-qrd-skuk-t5-overlay.dtbo-base := msm8998-v2-qrd-skuk-t5.dtb
 endif
-ifdef CONFIG_DEVICE_IDEALTE_QX1000
-dtbo-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-QX1000-overlay.dtbo
-msm8998-v2-qrd-skuk-QX1000-overlay.dtbo-base := msm8998-v2-qrd-skuk-QX1000.dtb
+ifdef CONFIG_DEVICE_FXTEC_QX1000
+dtbo-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-t5-overlay.dtbo
+msm8998-v2-qrd-skuk-t5-overlay.dtbo-base := msm8998-v2-qrd-skuk-t5.dtb
 endif
 else # ! overlay
+$(info CONFIG_BUILD_ARM64_DT_OVERLAY!=y)
 ifdef CONFIG_DEVICE_IDEALTE
 ifdef CONFIG_DEVICE_IDEALTE_K1
 dtb-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-k1.dtb
@@ -144,7 +145,7 @@ ifdef CONFIG_DEVICE_IDEALTE_T5
 dtb-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-t5.dtb
 endif
 ifdef CONFIG_DEVICE_FXTEC_QX1000
-dtb-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-QX1000.dtb
+dtb-$(CONFIG_ARCH_MSM8998) += msm8998-v2-qrd-skuk-t5.dtb
 endif
 else # ! idealte
 dtb-$(CONFIG_ARCH_MSM8998) +=msm8998-v2-qrd-skuk.dtb
