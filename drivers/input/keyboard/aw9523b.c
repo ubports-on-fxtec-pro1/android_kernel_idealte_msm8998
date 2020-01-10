@@ -126,7 +126,7 @@ static const unsigned short  key_array[Y_NUM][X_NUM] = {
 	{ KEY_BACKSPACE, KEY_D,         KEY_X,          KEY_K,        KEY_SEMICOLON, KEY_EQUAL,  KEY_E,     KEY_APOSTROPHE  },
 	{ KEY_CAPSLOCK,  KEY_BACKSLASH, KEY_LEFTBRACE,  KEY_DOWN,     KEY_O,         KEY_0,      KEY_GRAVE, KEY_K           },
 	{ KEY_SPACE,     KEY_F,         KEY_C,          KEY_N,        KEY_U,         KEY_8,      KEY_R,     KEY_5           },
-	{ KEY_BACK,      KEY_1,         0xFF,           0xFF,         KEY_2,         KEY_4,      KEY_TAB,   0xFF            }
+	{ KEY_ESC,       KEY_1,         0xFF,           0xFF,         KEY_2,         KEY_4,      KEY_TAB,   0xFF            }
 };
 
 // This macro sets the interval between polls of the key matrix for ghosted keys (in milliseconds).
