@@ -475,7 +475,7 @@
 			label = "fn_l";
 			gpios = <&tlmm 33 0x1>;
 			linux,input-type = <1>;
-			linux,code = <464>;
+			linux,code = <100>;
 			debounce-interval = <15>;
 		};
 
@@ -483,7 +483,7 @@
 			label = "fn_r";
 			gpios = <&tlmm 32 0x1>;
 			linux,input-type = <1>;
-			linux,code = <464>;
+			linux,code = <100>;
 			debounce-interval = <15>;
 		};
 	};
@@ -505,8 +505,8 @@
 		oem_hallb {
 			label = "hall_b";
 			gpios = <&tlmm 124 0x1>;
-			linux,input-type = <1>;
-			linux,code = <470>;
+			linux,input-type = <5>;
+			linux,code = <10>;
 			gpio-key,wakeup;
 			debounce-interval = <15>;
 		};
